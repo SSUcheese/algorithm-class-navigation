@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import GetRoute
 from .models import Route, Question, Choice
 from .functions import route_search, w_updater
+import json
 
 # Create your views here.
 
@@ -75,4 +76,5 @@ def detail_route(request, page_id):
     context['shortest_route'] = shortest_route
     context['recommended_path'] = recommended_path
     context['elevator_route'] = elevator_route
+    context['js_data'] = json.dumps(recommended_path)
     return render(request, 'navigation/result_page.html', context = context)

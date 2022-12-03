@@ -214,7 +214,7 @@ def w_updater(test):
                         after[0] += 1
                     elif after_route[i][2] == '2':  # 송용돌이 계단
                         after[2] += 1
-                    elif after_route[i][3] == '2':  # 직선형 계단
+                    elif after_route[i][2] == '3':  # 직선형 계단
                         after[3] += 1
                 elif (len(after_route[i]) == 5 and '_' in after_route[i]) and (len(after_route[i+1]) == 5 and '_' in after_route[i+1]):
                     after[1] += 1
