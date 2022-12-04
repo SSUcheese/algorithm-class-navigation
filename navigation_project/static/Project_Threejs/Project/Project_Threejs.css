@@ -1,0 +1,16 @@
+* {
+    outline: none;
+    margin: 0;
+}
+
+body {
+    overflow: hidden; /*화면을 넘어가서 스크롤바가 생기면, 스크롤바를 숨긴다.*/
+}
+
+#webgl-container {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+}
